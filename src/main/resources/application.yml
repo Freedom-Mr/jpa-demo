@@ -1,0 +1,23 @@
+
+server:
+  port: 8080
+  servlet:
+    context-path: /jpa
+datasource:
+  sys-user:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8
+    username: root
+    password: root
+    testWhileIdle: true
+    validationQuery: select 1
+    timeBetweenEvictionRunsMillis: 1800000
+  common:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/common?characterEncoding=utf-8
+    username: root
+    password: root
+    testWhileIdle: true
+    validationQuery: select 1
+    timeBetweenEvictionRunsMillis: 1800000
+
